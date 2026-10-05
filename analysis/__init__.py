@@ -1,0 +1,1 @@
+"""FutureScout analysis package."""
