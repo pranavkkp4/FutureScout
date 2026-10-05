@@ -1,0 +1,142 @@
+[
+  {
+    "model": "win_probability",
+    "feature": "score_diff",
+    "importance": 1.3933485522428661
+  },
+  {
+    "model": "win_probability",
+    "feature": "time",
+    "importance": 6.68946587722985e-06
+  },
+  {
+    "model": "win_probability",
+    "feature": "sd_x_time",
+    "importance": 0.15215032533400255
+  },
+  {
+    "model": "win_probability",
+    "feature": "sd_sq",
+    "importance": 2.741599852592221e-05
+  },
+  {
+    "model": "win_probability",
+    "feature": "sqrt_time",
+    "importance": 0.0025100862814249427
+  },
+  {
+    "model": "win_probability",
+    "feature": "qtr",
+    "importance": 2.0606004185759936e-05
+  },
+  {
+    "model": "win_probability",
+    "feature": "is_q4",
+    "importance": -4.565236722486876e-06
+  },
+  {
+    "model": "win_probability",
+    "feature": "sd_x_q4",
+    "importance": 0.003136002769523268
+  },
+  {
+    "model": "win_probability",
+    "feature": "yardline",
+    "importance": 0.011282392143537287
+  },
+  {
+    "model": "win_probability",
+    "feature": "yardline_sq",
+    "importance": 0.0014376028204829232
+  },
+  {
+    "model": "win_probability",
+    "feature": "log_ytg",
+    "importance": 0.0007823298358276368
+  },
+  {
+    "model": "win_probability",
+    "feature": "down_1",
+    "importance": 0.0015622047797714627
+  },
+  {
+    "model": "win_probability",
+    "feature": "down_2",
+    "importance": -1.4772790273842595e-05
+  },
+  {
+    "model": "win_probability",
+    "feature": "down_3",
+    "importance": 0.0004457776854852417
+  },
+  {
+    "model": "win_probability",
+    "feature": "down_4",
+    "importance": 0.0017410935030910957
+  },
+  {
+    "model": "win_probability",
+    "feature": "down_x_ytg",
+    "importance": 8.945658335783128e-05
+  },
+  {
+    "model": "win_probability",
+    "feature": "to_diff",
+    "importance": 0.00045721394213721345
+  },
+  {
+    "model": "win_probability",
+    "feature": "goal_to_go",
+    "importance": 1.848992627984103e-05
+  },
+  {
+    "model": "conversion",
+    "feature": "log_ytg",
+    "importance": 0.009352718192210544
+  },
+  {
+    "model": "conversion",
+    "feature": "ydstogo",
+    "importance": 0.046508164155836064
+  },
+  {
+    "model": "conversion",
+    "feature": "yardline",
+    "importance": -0.0006222034778836649
+  },
+  {
+    "model": "conversion",
+    "feature": "score_diff",
+    "importance": -9.98220351784429e-05
+  },
+  {
+    "model": "conversion",
+    "feature": "time",
+    "importance": 0.0036680064883739907
+  },
+  {
+    "model": "conversion",
+    "feature": "qtr",
+    "importance": 0.0017402724933908893
+  },
+  {
+    "model": "conversion",
+    "feature": "is_q4",
+    "importance": 0.0019847177524762913
+  },
+  {
+    "model": "conversion",
+    "feature": "to_diff",
+    "importance": -6.878975561926588e-05
+  },
+  {
+    "model": "conversion",
+    "feature": "goal_to_go",
+    "importance": 5.309392903181849e-06
+  },
+  {
+    "model": "conversion",
+    "feature": "is_pass",
+    "importance": 0.022784788789788846
+  }
+]
