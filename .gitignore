@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+app/node_modules/
+app/dist/
+app/vite.config.js
+app/vite.config.d.ts
+*.tsbuildinfo
+.env
+.DS_Store
+FutureScoutDraft/
