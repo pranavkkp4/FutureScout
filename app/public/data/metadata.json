@@ -1,0 +1,125 @@
+{
+  "generated_at_utc": "2026-10-05T16:45:54.004017+00:00",
+  "pipeline": "analysis.run",
+  "configuration": {
+    "start_season": 2015,
+    "end_season": 2024,
+    "wp_train_end": 2022,
+    "contracts_included": true
+  },
+  "environment": {
+    "python": "3.14.2",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.8.0"
+  },
+  "sources": [
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.parquet",
+      "path": "data/raw/play_by_play_2015.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.423112+00:00",
+      "cached": true,
+      "bytes": 19545842,
+      "sha256": "01b5ae7d06633a2e66b418404461a3d4ff055ad2f3a87d453cebcc8d3fda7ed9",
+      "rows": 48122
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.parquet",
+      "path": "data/raw/play_by_play_2016.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.502638+00:00",
+      "cached": true,
+      "bytes": 19344382,
+      "sha256": "95eba04e2145e3c1c8ca502f2a3a76cfb0a5990680c3fb480f02a74a45f54a3b",
+      "rows": 47651
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.parquet",
+      "path": "data/raw/play_by_play_2017.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.540635+00:00",
+      "cached": true,
+      "bytes": 19050401,
+      "sha256": "84eacd963c1fdd45965f6222c62e9329a7f3412f029d92c1ac5e34a1bb4d3710",
+      "rows": 47245
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.parquet",
+      "path": "data/raw/play_by_play_2018.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.580595+00:00",
+      "cached": true,
+      "bytes": 19072097,
+      "sha256": "2e6f2dce7c7ebd46e985cabe0c17eb72b39a77f98cb4478409294f50b5820150",
+      "rows": 47109
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.parquet",
+      "path": "data/raw/play_by_play_2019.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.624192+00:00",
+      "cached": true,
+      "bytes": 19119729,
+      "sha256": "60c3067017db2d28a78f66a79b657268be8578d9a5288e6a827efdcd7fe42540",
+      "rows": 47260
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2020.parquet",
+      "path": "data/raw/play_by_play_2020.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.665745+00:00",
+      "cached": true,
+      "bytes": 19286459,
+      "sha256": "8889f5d8782b5c5dce3c3644acdc0322b228a7e9cb13fa36cbac250e260e9f60",
+      "rows": 47705
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.parquet",
+      "path": "data/raw/play_by_play_2021.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.710618+00:00",
+      "cached": true,
+      "bytes": 20249925,
+      "sha256": "333ad34378e5339d5172717cc83378e908daf02c8699416ab3e17c2ec10f78d8",
+      "rows": 49922
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.parquet",
+      "path": "data/raw/play_by_play_2022.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.757199+00:00",
+      "cached": true,
+      "bytes": 20426548,
+      "sha256": "931121d8897779d7944e2a293e92ed8799c8e5cceef84096ac42339003fedc09",
+      "rows": 49434
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.parquet",
+      "path": "data/raw/play_by_play_2023.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.801776+00:00",
+      "cached": true,
+      "bytes": 20534088,
+      "sha256": "bd3484731408def6b0ec93225bba2bd7b2c65769ca707a2b9444d891abdc6776",
+      "rows": 49665
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.parquet",
+      "path": "data/raw/play_by_play_2024.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:35.847933+00:00",
+      "cached": true,
+      "bytes": 20597560,
+      "sha256": "3fd2896bc0b911b615142d2f1fabae54a4bbba5ab7b73b28187b118ef8af6a3b",
+      "rows": 49492
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nflverse/nfldata/05cf6a914fd78bd6fd09d997aa87e529e802b588/data/games.csv",
+      "path": "data/raw/games.csv",
+      "recorded_at_utc": "2026-10-05T16:45:35.362239+00:00",
+      "cached": true,
+      "bytes": 2178388,
+      "sha256": "202cd0a8fa0b6c8952ee7f337b0521725dfdf4ae0919912e774537e569f57365",
+      "rows": 7548
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/contracts/historical_contracts.parquet",
+      "path": "data/raw/historical_contracts.parquet",
+      "recorded_at_utc": "2026-10-05T16:45:45.618814+00:00",
+      "cached": true,
+      "bytes": 11055618,
+      "sha256": "a5f25a5920afe07be062fca8ccfa86d4a60e05018cacb0fc2b5e0459eec530f5",
+      "rows": 52801
+    }
+  ]
+}

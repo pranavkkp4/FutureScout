@@ -1,0 +1,220 @@
+{
+  "status": "review_required",
+  "generated_at_utc": "2026-10-05T16:45:54.004017+00:00",
+  "dataset": {
+    "seasons": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "games": 2623,
+    "raw_games": 2743,
+    "raw_plays": 483605,
+    "regular_plays": 462462,
+    "clean_plays": 383574,
+    "fourth_downs": 37637
+  },
+  "split": {
+    "train_seasons": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "test_seasons": [
+      2023,
+      2024
+    ]
+  },
+  "models": {
+    "win_probability": {
+      "train_rows": 303415,
+      "test_rows": 78497,
+      "logistic": {
+        "log_loss": 0.47816033644295036,
+        "brier": 0.16155220920064056,
+        "auc": 0.8420064851717888
+      },
+      "gradient_boosting": {
+        "log_loss": 0.47757586539151214,
+        "brier": 0.16139565904003025,
+        "auc": 0.8423690391164291
+      }
+    },
+    "field_goal": {
+      "train_rows": 8000,
+      "test_rows": 2175,
+      "logistic": {
+        "log_loss": 0.3655016641894872,
+        "brier": 0.11429662907417201,
+        "auc": 0.7638260057984828
+      },
+      "gradient_boosting": {
+        "log_loss": 0.36496154261977193,
+        "brier": 0.11361638146869009,
+        "auc": 0.7635206918463798
+      }
+    },
+    "punt": {
+      "train_rows": 10519,
+      "test_rows": 2501,
+      "rmse": 13.538663074418121
+    },
+    "conversion": {
+      "train_rows": 4693,
+      "test_rows": 1545,
+      "logistic": {
+        "log_loss": 0.6183961691791434,
+        "brier": 0.21479458989172506,
+        "auc": 0.7061498022685833
+      },
+      "gradient_boosting": {
+        "log_loss": 0.6349752880878344,
+        "brier": 0.22225039101815258,
+        "auc": 0.6843959635051065
+      }
+    },
+    "touchdown": {
+      "train_rows": 4693,
+      "test_rows": 1545,
+      "logistic": {
+        "log_loss": 0.18203417703464603,
+        "brier": 0.05310697776734137,
+        "auc": 0.9031887323943661
+      },
+      "gradient_boosting": {
+        "log_loss": 0.19806115912487612,
+        "brier": 0.056934955618431204,
+        "auc": 0.877318309859155
+      }
+    }
+  },
+  "hypotheses": {
+    "h1": {
+      "n": 1218,
+      "share_go_best": 1.0,
+      "mean_go_minus_punt": 0.05794627165941391
+    },
+    "h2": {
+      "test_actual_go": 0.19653988042233814,
+      "test_rec_go": 0.6392316499173133,
+      "all_actual_go": 0.16582086776310545,
+      "all_rec_go": 0.6338709248877434
+    },
+    "h2_region": {
+      "n": 1218,
+      "actual_go": 0.7635467980295566,
+      "rec_go": 1.0,
+      "gap": 0.2364532019704434,
+      "region_gaps": {
+        "short_midfield": 0.2364532019704434,
+        "short_other": 0.5141868512110727,
+        "long_midfield": 0.5358475741504616,
+        "long_other": 0.45514325974635983
+      },
+      "is_largest_gap": false
+    },
+    "h3": {
+      "q4_trailing": 0.7604186133433003,
+      "q4_leading": 0.47047578589634664,
+      "first_half": 0.6102442698805552,
+      "ranking_teams": 32,
+      "ranking_spearman_first_half_q4": 0.2701612903225806
+    },
+    "wp_left": {
+      "test_mean_per_game": 0.14526433889770324,
+      "test_total": 79.02380036035056
+    }
+  },
+  "quarterback": {
+    "train_rows": 192,
+    "test_rows": 64,
+    "models": {
+      "logistic": {
+        "log_loss": 0.47387555914484536,
+        "auc": 0.8670634920634921
+      },
+      "random_forest": {
+        "log_loss": 0.48867961369928076,
+        "auc": 0.8442460317460317
+      },
+      "gradient_boosting": {
+        "log_loss": 0.48765623124509005,
+        "auc": 0.8720238095238095
+      }
+    },
+    "cross_validation": {
+      "logistic": {
+        "folds": 9,
+        "mean_auc": 0.8470017636684304,
+        "min_auc": 0.7083333333333335,
+        "max_auc": 0.9007936507936508
+      },
+      "random_forest": {
+        "folds": 9,
+        "mean_auc": 0.8168430335097002,
+        "min_auc": 0.6916666666666667,
+        "max_auc": 0.9087301587301587
+      },
+      "gradient_boosting": {
+        "folds": 9,
+        "mean_auc": 0.7971340388007054,
+        "min_auc": 0.5,
+        "max_auc": 0.9083333333333334
+      }
+    },
+    "h4": {
+      "auc_epa_only": 0.9087301587301587,
+      "auc_epa_plus_salary": 0.9067460317460317,
+      "logloss_epa_only": 0.4540042230547059,
+      "logloss_epa_plus_salary": 0.45628203995533245,
+      "logloss_improvement_pct": -0.501717117365248
+    },
+    "h5": {
+      "playoff_median_qb_share": 0.100662035415436,
+      "nonplayoff_median_qb_share": 0.08913344705021553,
+      "league_median_qb_share": 0.09152126396074833,
+      "share_playoff_below_median": 0.46923076923076923
+    }
+  },
+  "validation": {
+    "win_probability": {
+      "calibration_target": 0.03,
+      "max_decile_gap": 0.0342631947248557,
+      "calibrated_within_target": false,
+      "gradient_boosting_beats_logistic_log_loss": true,
+      "gradient_boosting_beats_logistic_brier": true
+    },
+    "playoff": {
+      "auc_target": 0.8,
+      "best_cross_validated_mean_auc": 0.8470017636684304,
+      "cross_validated_target_met": true
+    },
+    "proposal_scope_complete": false
+  },
+  "proposal_coverage": {
+    "fourth_down_pbp": "implemented from nflverse play-by-play",
+    "qbr": "not_implemented: the downloaded public sources do not contain QBR; EPA per quarterback dropback is used instead",
+    "rb_composite_rating": "not_implemented: no source field or documented weighting was supplied",
+    "salary_window": "implemented for downloaded 2015-2024 contract history; proposal's 2015-2025 excluding-2021 window is not represented",
+    "playoff_cross_validation": "implemented as expanding season folds in addition to the 2021-2022 holdout"
+  },
+  "limitations": [
+    "The conversion model learns from observed go attempts and does not remove selection bias.",
+    "The GO pass/run mixture is the training-period observed rate; it is not a randomized policy estimate.",
+    "Reported contract cap charges approximate team spending and omit official cap-accounting details.",
+    "Counterfactual transitions use fixed six-second, kickoff, failed-conversion, field-goal-miss, and punt-state assumptions rather than observed outcomes for an action that was not chosen.",
+    "The win probability model omits personnel, injuries, weather, and betting-market information."
+  ]
+}
